@@ -1,0 +1,47 @@
+{
+    "name": "sxtnmedia/saloon-modelify",
+    "description": "Use Saloon as a Laravel's model.",
+    "keywords": [
+        "sxtnmedia",
+        "saloon-modelify",
+        "laravel",
+        "saloon",
+        "resource",
+        "model"
+    ],
+    "homepage": "https://github.com/sxtnmedia/saloon-modelify",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Patryk Kleszyński",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^9.0|^10.0",
+        "sammyjo20/saloon": "^2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0|^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sxtnmedia\\SaloonModelify\\": "src",
+            "Sxtnmedia\\SaloonModelify\\Example\\": "example"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Sxtnmedia\\SaloonModelify\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
